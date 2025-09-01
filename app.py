@@ -718,7 +718,7 @@ HTML_TEMPLATE = """
             
             try {
                 // انتظار 4 ثواني كما هو مطلوب
-                await new Promise(resolve => setTimeout(resolve, 4000));
+                await new Promise(resolve => setTimeout(resolve, 2500));
                 
                 const response = await fetch(`/api/get_token/${acsstoken}`);
                 const data = await response.json();
@@ -926,7 +926,7 @@ def index():
 def get_token(acsstoken):
     try:
         # انتظار 4 ثواني كما هو مطلوب
-        time.sleep(4)
+        time.sleep(2.5)
         
         url = f"https://acsstoken.vercel.app/api/{acsstoken}"
         response = requests.get(url)
