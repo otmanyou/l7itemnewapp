@@ -1081,4 +1081,4 @@ def update_bio():
         return jsonify({"success": False, "error": str(e), "status_code": 500})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
